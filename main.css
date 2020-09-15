@@ -113,7 +113,7 @@ h6{
     align-items: center; justify-content: center; 
 }
 .about p{
-    width: 60%;
+    width: 50%;
 }
 .social-links{
     display: flex; width: 100%;
@@ -152,7 +152,7 @@ h6{
     margin: 2vh 2vw 0 2vw;
     max-height: 330px; min-width: 370px; max-width: 397.35px;
     background-color: #cde6ed;
-    border-radius: 2%;
+    border-radius: 1%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.1);
 }
 .game-pic h2{color: #277277; word-wrap: break-word;}
@@ -255,7 +255,7 @@ input[type="submit"]{border:none; font-size: 1.7rem;}
     align-items: center;justify-content: center;
 }
 .description p{min-width: 250px; width: 25%; margin: 5vh 2vw}
-.skills{margin: 5vh 5vw 0 5vw;}
+.skills{margin: 0 5vw;}
 .skills h2{text-align: left;}
 .process{padding-top: 20vh;}
 .process p{width: 50vw; margin:0.5vh auto; min-width: 250px;}
