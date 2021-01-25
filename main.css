@@ -254,15 +254,18 @@ input[type="submit"]{border:none; font-size: 1.7rem;}
 #icon-blocks{display: flex; width: 60vw; padding: 0 10vw; height: auto;}
 .vector{margin: 0;}
 .double-rows{ display: flex; flex-direction: column; flex-wrap: nowrap;}
+.double-columns{display:flex; flex-direction: row; flex-wrap:nowrap; padding:0;}
+.double-columns *, .double-rows *{width: 100%;}
 
 /* ART PAGES */
-.art-page{margin: 0 30vw;}
+.art-page img{width: 100%;}
 .comic{margin: 5vh;}
-.comic:hover{transform: scale(1.1); transition: transform .3s ease;}
+.comic:hover{transform: scale(1.05); transition: transform .3s ease;}
 .long-comic-desc{display: flex; flex-direction: column;}
-.long-comic-desc *{margin-bottom: 2vh;}
+.long-comic-desc p{margin:0 30vw 2vh 30vw;}
+.long-comic-desc *{margin-bottom: 3vh;}
 #title-img {margin: 2vh auto;}
-#comic *{margin: 1vh 0.5vw;}
+#comic *{margin: 0.75vw 0.5vw;}
 
 /* INDIVIDUAL GAME PAGES */
 .summary{
@@ -310,7 +313,7 @@ input[type="submit"]{border:none; font-size: 1.7rem;}
     }
     .overlay{display: none;}
     .game-description h6{text-align: center; margin-bottom: 1vh;}
-    .art-page{margin: 0 20vw;}
+    .long-comic-desc p{margin: 0 20vw 2vh 20vw;}
 }
 @media only screen and (max-width: 850px) {
     .about p{padding: 3vh 10vw; width: 100%}
@@ -342,5 +345,5 @@ input[type="submit"]{border:none; font-size: 1.7rem;}
     .contact-form *{width: 90%; min-width: 0;}
     .png{max-width: 100%;}
     .double-rows *{max-width: 50%; height: auto;}
-    .art-page{margin: 0 10vw;}
+    .long-comic-desc p{margin: 0 10vw 2vh 10vw;}
 }
