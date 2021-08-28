@@ -18,7 +18,7 @@ section, article{padding-top: 10vh;}
 a{text-decoration: none;}
 p{ 
     font-family: 'Montserrat';
-    font-size: calc(1rem + 0.7vh);
+    font-size: calc(1rem + 0.5vh);
     line-height: 1.8;
 }
 li{font-size: calc(1rem + 0.5vh); font-family: 'Montserrat'; line-height: 1.8;}
@@ -116,8 +116,9 @@ h6{
     width: 50%;
 }
 .social-links{
+    margin-top: 5vh;
     display: flex; width: 100%;
-    padding-right: 30vw; justify-content: flex-end;
+    justify-content: center;
 }
 .social-links a{
     background-color: #e08395; border-radius: 100%;
