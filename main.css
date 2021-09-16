@@ -18,7 +18,7 @@ section, article{padding-top: 10vh;}
 a{text-decoration: none;}
 p{ 
     font-family: 'Montserrat';
-    font-size: calc(1rem + 0.5vh);
+    font-size: 1.5rem;
     line-height: 1.8;
 }
 li{font-size: calc(1rem + 0.5vh); font-family: 'Montserrat'; line-height: 1.8;}
@@ -71,6 +71,7 @@ h6{
     top: 0; display: flex;
     align-items: center; justify-content: space-between;
     z-index: 10; padding: 0 4vw; overflow: hidden;
+    background: linear-gradient(180deg, rgba(205,231,238,1) 0%, rgba(205,231,238,1) 40%, rgba(205,231,238,0) 100%);
 }
 .nav-bar *{
     height: 7vh; font-size: calc(1rem + 0.55vw);
@@ -249,9 +250,9 @@ input[type="submit"]{border:none; font-size: 1.7rem;}
 .overlay .see-more:hover{background-color: #ffd7e4; color: #203b32;}
 .game-title:hover .overlay{opacity: 1;}
 .art-strip:hover .overlay{opacity: 1;}
-.game-title:hover {transform: scale(1.1); transition: transform .3s ease;}
+.game-title:hover {transform: scale(1.04); transition: transform .3s ease;}
 .png, .animation{display: block; width: auto; border-radius: 5%;}
-.png:hover, .animation:hover, .art-strip:hover{transform: scale(1.1); transition: transform .3s ease;}
+.png:hover, .animation:hover, .art-strip:hover{transform: scale(1.04); transition: transform .3s ease;}
 #icon-blocks{display: flex; width: 60vw; padding: 0 10vw; height: auto;}
 .vector{margin: 0;}
 .double-rows{ display: flex; flex-direction: column; flex-wrap: nowrap;}
@@ -261,7 +262,7 @@ input[type="submit"]{border:none; font-size: 1.7rem;}
 /* ART PAGES */
 .art-page img{width: 100%;}
 .comic{margin: 5vh;}
-.comic:hover{transform: scale(1.05); transition: transform .3s ease;}
+.comic:hover{transform: scale(1.04); transition: transform .3s ease;}
 .long-comic-desc{display: flex; flex-direction: column;}
 .long-comic-desc p{margin:0 30vw 2vh 30vw;}
 .long-comic-desc *{margin-bottom: 3vh;}
