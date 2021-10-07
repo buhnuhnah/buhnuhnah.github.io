@@ -121,10 +121,11 @@ header img{
 
 /* ABOUT SECTION */
 .about{
-    display: flex; flex-direction: column; justify-content: center; margin: 0 8vh 5vh 8vh;;
+    display: flex; flex-direction: column; justify-content: center; margin: 0 8vw 5vh 8vw; align-content: center;
 }
 .about p{
-    padding: 5vh 20vw; min-width: 50vw;
+    width: clamp(300px, 50vw, 700px); margin:  auto;
+    margin-bottom: 5vh;
 }
 .about .button{
     margin: auto;
@@ -221,8 +222,28 @@ header img{
 
 
 /* RESPONSIVE STUFF */
+@media only screen and (max-width: 970px) {
+    .game-list .overlay{
+        display: none;
+    }
+    .art-list .overlay {
+        position: relative; opacity: 1;
+        background-color: rgba(58, 102, 89, 0.2);
+        margin: auto; margin-top: 2vh; margin-bottom: 5vh;
+        width: 50vw; min-width: 300px;
+    }
+    .art-list .overlay p{
+        text-align: center; margin: 2vh 2vw 0 2vw;
+        color: rgba(58, 102, 89, 1.0);
+    }
+    .art-list .overlay .button{
+        color: rgba(58, 102, 89, 1.0)
+    }
+    .art-piece img{margin: auto;}
+}
+
 @media only screen and (max-width: 700px){
-    .summary ifram{width: 80%;}
+    .summary iframe{width: 80%;}
     .description{flex-direction: column;}
     .description p{width: 100%;}
 }
