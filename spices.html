@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ana Vy Nguyen | Shopping Season</title>
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Montserrat|Concert+One&display=swap" rel="stylesheet">
+    <title>Ana Vy Nguyen | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Pangolin|Montserrat|Concert+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
-    
+
 <body>
+    <nav class='nav-bar'>
+        <div class='left-nav'>
+            <a href='#game-section'>Games</a>
+            <a href='#art-section'>Art / Videos</a>
+        </div>
+        <a href='index.html' class='logo'>
+            <img src='images/logo.svg'>
+        </a>
+        <div class='right-nav'>
+            <a href = '#about-section'>About</a>
+            <a id= 'contact-me' href='mailto:vyanan918@gmail.com'>Contact Me</a>
+        </div>
+    </nav>
+    
     <header>
-        <nav class = 'nav-bar'>
-            <a href='index.html'>
-                <img id="logo" src="images/logo.svg" alt='logo'>
-            </a>
-            <div class = 'nav-links'>
-                <a href="Resume.pdf" download="anavn_resume">Resume</a>
-                <a href='index.html#projects-section'>Projects</a>
-                <a href='index.html#contact-section'>Contact Me</a>
-            </div>
-        </nav>
+        <h1>Shopping Season Deluxe 2.0:<br>Attack of the Seasoning</h1>
+        <img class='underline' src="images/underline.svg">
     </header>
     
     <section class='summary'>
-        <div class='section-heading'>
-            <h1>Shopping Season Deluxe 2.0:<br>Attack of the Seasoning</h1>
-        </div>
-        <iframe width="600" height="350" src="https://www.youtube.com/embed/LQ1p7sw2Tuk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="600" height="350" src="https://www.youtube.com/embed/LQ1p7sw2Tuk" frameborder="0" allowfullscreen></iframe>
         <div class='description'>
             <div class='skills'>
                 <h2>Skills Used:</h2>
@@ -35,17 +38,20 @@
                     <li>Character Design</li>
                     <li>Digital Art</li>
                 </ul>
+                <a href='images/spices/shopping-season.zip' download='shopping-season.zip' class='button' id='download'>Download</a>
             </div>
-            <p>January - March 2019 <br><br>This was a game that me and 4 others made in 10 weeks for a class. The prompt word was "seasoning", so we came up with a timed minigame where the player has to try to collect as many spices in a busy mall as they can. Each level is procedurally generated, so replaying it is always fresh. I did all of the art assets, including player animations and obstacles.</p>
+            <div class='summary-text'>
+                <p class='date'><i>January - March 2019</i></p>
+                <p>This was a game that me and 4 others made in 10 weeks for a class. The prompt word was "seasoning", so we came up with a timed minigame where the player has to try to collect as many spices in a busy mall as they can. Each level is procedurally generated, so replaying it is always fresh. I did all of the art assets, making sure that they worked well with the level generator.</p>
+            </div>
         </div>
-        <a href='images/spices/shopping-season.zip' download='shopping-season.zip' class='button' id='download'>Download</a>
     </section>
     
+    <img class='underline' src="images/underline.svg">
+    
     <section class='assets'>
-        <div class='section-heading'>
-            <h1>Art Assets</h1>
-        </div>
-        <div class='art-list'>
+        <h1>Art Assets</h1>
+        <div class='asset-list'>
             <img id='gif' src="images/spices/spiceRun.gif" alt='gif of girl running with shopping cart'>
             <img id='gif' src='images/spices/spiceJump.gif' alt='gif of girl jumping'>
             <img id='gif' src='images/spices/spiceGrab.gif' alt='gif of girl grabbing something in the air'>
@@ -55,22 +61,20 @@
             <img id='spice' src="images/spices/tumeric.png" alt='tumeric'>
             <img id='planter' src="images/spices/planter1.png" alt='planter with flowers in it'>
             <img id='planter' src='images/spices/planter2.png' alt='another planter full of flowers'>
-            <div class='double-rows'>
-                <img id='box' src='images/spices/box1.png' alt='a cardboard box'>
-                <img id='box' src='images/spices/box2.png' alt='another cardboard box'>
-            </div>
+            <img id='box' src='images/spices/box1.png' alt='a cardboard box'>
+            <img id='box' src='images/spices/box2.png' alt='another cardboard box'>
             <img id='bg' src='images/spices/bg.png' alt='game background'>
         </div>
     </section>
     
+    <img class='underline' src="images/underline.svg">
+    
     <section class='process'>
-        <div class='section-heading'>
             <h1>Process</h1>
-        </div>
         <article class='skill'>
             <h2>Animating</h2>
             <p>This was my first time doing art digitally, so I used the free program Krita to experiment with. This was a huge learning experience as I learned about animation. The three animations (run, jump, grab) took about a week and a half to do since I had no base knowledge, but I had a fun time doing it! </p>
-            <div class='art-list'>
+            <div class='sketch-list'>
                 <img id='gif' src='images/spices/jumpSketch.gif' alt='sketch of a girl jumping'>
                 <img id='gif' src='images/spices/runSketch.gif' alt='sketch of a girl running'>
                 <img src="images/spices/animation-study.jpg" alt='sketches of my animation studies'>
@@ -79,7 +83,7 @@
         <article class='skill' id='tripleimg'>
             <h2>Character Design</h2>
             <p>Since our prompt was "seasoning", I wanted to find a way to incorporate spices into the character design. We also needed our character to stand out since we knew our game was going to have a lot of visual elements to give the feeling of a busy shopping mall.</p>
-            <div class='art-list'>
+            <div class='sketch-list'>
                 <img id='sketch-page' src='images/spices/spice-sketch1.jpg' alt='concept sketches of the main character'>
                 <img src='images/spices/spice-sketch2.jpg' alt='more concept sketches'>
             </div>
@@ -87,7 +91,7 @@
     </section>
     
     <footer class="copyright">
-         <p>&copy; 2020 Ana Vy Nguyen</p>
+         <p>&copy; 2021 Ana Vy Nguyen</p>
     </footer>
 </body>
 </html>

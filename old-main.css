@@ -1,0 +1,351 @@
+/* GLOBAL */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; font-family: 'Baloo Tamma';
+    color: #254439; height: 100%;
+}
+body{
+    width: 100%;
+    background-color: #cde7ee;
+    -ms-overflow-style: none;
+    display: flex; flex-direction: column;
+}
+body::-webkit-scrollbar {display: none;}
+section, article{padding-top: 10vh;}
+a{text-decoration: none;}
+p{ 
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+li{font-size: calc(1rem + 0.5vh); font-family: 'Montserrat'; line-height: 1.8;}
+img{width: 100%; height: auto; display: block;}
+
+/* HEADINGS FOR ALL PAGES */
+h1{
+    text-align: center; color: #1c5356;
+    position: relative; font-size: calc(2rem + 2vh); width:auto; display: inline-block;
+    line-height: 1.2; padding: 0 1vw
+}
+h2{
+    font-size: calc(1.2rem + 1vh); text-align: center;
+    line-height: 1.2; font-weight: 100;
+}
+.section-heading{text-align: center;}
+.section-heading h1::after{
+    content:url(images/underline.svg);
+    display: block;  width: 50%; min-width: 80px;
+    margin: -1rem auto 5vh auto; height: 0;
+    max-width: 120px;
+}
+h3{
+    text-align: center;
+    width: 80vw; max-width: 780px;
+    font-family: 'Montserrat'; line-height: 1.6;
+    margin-bottom: 5vh; min-width: 450px;
+}
+h6{
+    font-size: 1.3rem; font-weight: 100;
+}
+.button{
+    text-align: center; align-self: center;
+    font-size: calc(1rem + 0.5vh); cursor:pointer;
+    text-decoration: none; width: auto;
+    margin: 0 auto; font-family: 'Baloo Tamma';
+    padding: 0.5rem 1vw 0 1vw; border-radius: 2rem;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.1), 0 3px 10px 0 rgba(0,0,0,0.1);
+}
+/* BUTTONS */
+.button:hover{transition: background-color 0.4s ease;}
+#see-more{background-color: #92e4b9;color: #203b32;}
+#see-more:hover{background-color: #277277; color: #b7e4cc;}
+#download{background-color: #f3c4cd; color: #203b32;}
+#download:hover{background-color: #7bccaf; color: white;}
+
+/* NAV BAR */
+.nav-bar{
+    width: 100%; position: fixed;
+    top: 0; display: flex;
+    align-items: center; justify-content: space-between;
+    z-index: 10; padding: 0 4vw; overflow: hidden;
+    background: linear-gradient(180deg, rgba(205,231,238,1) 0%, rgba(205,231,238,1) 40%, rgba(205,231,238,0) 100%);
+}
+.nav-bar *{
+    height: 7vh; font-size: calc(1rem + 0.55vw);
+    font-family: 'Concert One'; color: #277277;
+    overflow: hidden;
+}
+#logo{
+    float: left; margin-left: 2vw;
+    width: auto;
+}
+.nav-links{
+    display: flex;
+}
+.nav-links a{
+    padding: 1.8vh 2vh 2vh 2vh;
+    text-shadow: 0 0 6px #cde6ed;
+}
+.nav-links a:hover{
+    transition: color 0.3s ease;
+    color:#60ca92;
+}
+
+/* BIG PICTURE AND HEADLINE */
+.big-pic{
+    position: relative; height: 100vh;
+    display: flex; flex-direction: column;
+    padding: 5vh 4vw; justify-content: center;
+}
+.headline h1{
+    position: absolute; top:0;
+    font-size: calc(2.5rem + 1.75vh);
+    color: #d38796; text-shadow: 0 0 6px #cde6ed;
+    padding: 10vh 14vw 0 34vw;
+}
+
+/* ABOUT SECTION */
+.about{
+    display: flex; flex-direction: column;
+    margin-bottom: 5vh;  padding:0 5vw; height: 100vh;
+    align-items: center; justify-content: center; 
+}
+.about p{
+    width: 50%;
+}
+.social-links{
+    margin-top: 5vh;
+    display: flex; width: 100%;
+    justify-content: center;
+}
+.social-links a{
+    background-color: #e08395; border-radius: 100%;
+    margin: 1vw;
+}
+.social-links a:hover{
+    transition: background-color 0.3s ease;
+    background-color: #7bccaf;
+}
+.social-links img{
+    display: block; width: 6vh;
+}
+
+/*SHOWCASE*/
+.showcase{
+    padding: 10vh 0; display: flex;
+    flex-direction: column;
+    background-image: url(images/Crane_Bg.png);
+    background-size: contain; background-attachment: fixed; width: 100%;
+}
+.showcase h1{padding: 0 5vw 5vh 5vw;}
+.portfolio-item1, .portfolio-item2{
+    display: flex; justify-content: center;
+    padding: 4vh 5vw;
+}
+.portfolio-item1{flex-wrap: wrap;}
+.portfolio-item2{flex-wrap: wrap-reverse;}
+.game-pic{
+    padding: 1rem; padding-bottom: 0;
+    display: flex; flex-direction: column;
+    justify-content: center; 
+    margin: 2vh 2vw 0 2vw;
+    max-height: 330px; min-width: 370px; max-width: 397.35px;
+    background-color: #cde6ed;
+    border-radius: 1%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.1);
+}
+.game-pic h2{color: #277277; word-wrap: break-word;}
+.portfolio-item1 .game-pic{
+    transform: rotate(-5deg);
+}
+.portfolio-item2 .game-pic{
+    transform: rotate(5deg);
+}
+.game-pic *{width: 100%;}
+.game-pic h2{padding: 2vh 0; text-align: center;}
+.game-description{
+    display: flex; max-width: 425px;
+    margin: 0 2vw; flex-direction: column;
+    justify-content: center;
+}
+.game-description p{
+    background-color: rgba(198, 230, 238, 0.4);
+    padding: 1rem; border-radius: 5%;
+    margin-bottom: 2vh;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.1), 0 3px 10px 0 rgba(0,0,0,0.1);
+}
+.game-description h6{text-align: right;padding-right: 1vw;}
+
+/* CONTACT SECTION */
+.contact-me{
+    height: 100vh; padding: 0 5vw;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+.contact-form{
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    width: 100%;
+}
+.contact-form *{
+    width: 30vw; min-width: 400px;
+}
+label{
+    font-size: 1.7rem; text-align: center;
+}
+input[type=text]{margin-bottom: 3vh;}
+textarea{
+    height: 20vh; margin-bottom: 3vh;
+    resize: none;
+}
+input[type=text], textarea{
+    border: 0.2rem solid #f3c4cd; padding: 0.7rem 1.3rem;
+    font-family: 'Montserrat';
+}
+input[type=text]:focus, textarea:focus{
+    border: 0.2rem solid #ed9baa;
+    outline: none;
+    transition: border 0.3s ease;
+}
+input[type="submit"]{border:none; font-size: 1.7rem;}
+.copyright{
+    width: 100%; text-align: center;
+    background-color: #203b32; color: #ffe5e5;
+    margin-top: 5vw;
+}
+
+
+/*GAMES PAGE*/
+.art{margin-top: 10vh;}
+.game-list, .art-list, .game-title{
+    display: flex; flex-wrap: wrap; padding: 1vh 18vw;
+    align-items: center; justify-content: center;
+}
+.game-title, .art-list *{
+    position: relative; overflow: hidden;
+    margin: 1vh 1vw; padding: 0; border-radius: 5%;
+    display:block; width: auto;
+}
+.art-strip *{padding: 0; margin: 0;}
+.art-strip .overlay{
+    background-color: rgba(0,0,0,0.8); height: 100%;
+    border-radius: 5%; overflow: hidden; margin: 0;
+    opacity: 0; transition: 0.3s ease;
+}
+.art-strip .overlay .button{margin: 0 auto; padding: 0.5rem 1vw 0 1vw; border-radius: 2rem;}
+.overlay{
+    position: absolute; height: 100%; bottom:0; overflow: hidden;
+    background-color: rgba(0,0,0,0.8);
+    transition: 0.5s ease; display: flex; 
+    flex-direction: column; opacity: 0;
+    justify-content: center; align-items: center;
+}
+.overlay p{
+    color: #cde6ed; text-shadow: 0 0 5px black;
+    margin: 3% 10%; font-size: 1.5rem;
+}
+.overlay .see-more:hover{background-color: #ffd7e4; color: #203b32;}
+.game-title:hover .overlay{opacity: 1;}
+.art-strip:hover .overlay{opacity: 1;}
+.game-title:hover {transform: scale(1.04); transition: transform .3s ease;}
+.png, .animation{display: block; width: auto; border-radius: 5%;}
+.png:hover, .animation:hover, .art-strip:hover{transform: scale(1.04); transition: transform .3s ease;}
+#icon-blocks{display: flex; width: 60vw; padding: 0 10vw; height: auto;}
+.vector{margin: 0;}
+.double-rows{ display: flex; flex-direction: column; flex-wrap: nowrap;}
+.double-columns{display:flex; flex-direction: row; flex-wrap:nowrap; padding:0;}
+.double-columns *, .double-rows *{width: 100%;}
+
+/* ART PAGES */
+.art-page img{width: 100%;}
+.comic{margin: 5vh;}
+.comic:hover{transform: scale(1.04); transition: transform .3s ease;}
+.long-comic-desc{display: flex; flex-direction: column;}
+.long-comic-desc p{margin:0 30vw 2vh 30vw;}
+.long-comic-desc *{margin-bottom: 3vh;}
+#title-img {margin: 2vh auto;}
+#comic *{margin: 0.75vw 0.5vw;}
+
+/* INDIVIDUAL GAME PAGES */
+.summary{
+    display: flex; flex-direction: column;
+    align-items: center; margin-bottom: 10vh;
+}
+.description{
+    display: flex; width: 100%;
+    align-items: center;justify-content: center;
+}
+.description p{min-width: 250px; width: 25%; margin: 5vh 2vw}
+.skills{margin: 0 5vw;}
+.skills h2{text-align: left;}
+.process{padding-top: 20vh;}
+.process p{width: 50vw; margin:0.5vh auto; min-width: 250px;}
+.skill .art-list img{width: 300px; border-radius: 2%;}
+.skill:first-of-type{padding: 5vh;}
+/* image restrictions */
+#tripleimg img{width: 250px;}
+#gif{max-width: 275px;}
+#spice, #icon{max-width: 200px;}
+#planter, #chickenboy, #pipes{max-width: 350px;}
+#box{max-width: 150px;}
+#bg{max-width: 450px;}
+#sub-video{max-width: 600px;}
+
+/*RESPONSIVE STUFF*/
+@media only screen and (max-width: 1150px) {
+    .game-list, .art-list{padding: 1vh 10vw;}
+    #icon-blocks{padding: 0;}
+    .overlay{display: hidden;}
+}
+@media only screen and (max-width: 970px) {
+    .nav-links a{font-size: 1.5rem;}
+    .headline h1{font-size: calc(2rem + 2vh); padding: 19vh 9vw 0 30vw;}
+    .big-pic img{ content: url(images/banner-med.png);}
+    .social-links{padding: 1vh 0; justify-content: center;}
+    .game-pic{
+        margin: 0 2vw 2vh 2vw;
+        width: 80%; max-height: 400px;
+    }
+    .portfolio-item1 .game-pic{transform: none;}
+    .portfolio-item2 .game-pic{
+        transform: none; margin-top: 8vh;
+    }
+    .overlay{display: none;}
+    .game-description h6{text-align: center; margin-bottom: 1vh;}
+    .long-comic-desc p{margin: 0 20vw 2vh 20vw;}
+}
+@media only screen and (max-width: 850px) {
+    .about p{padding: 3vh 10vw; width: 100%}
+    .double-rows{flex-direction: row;}
+    .game-title a, .game-title img{width: 100%;}
+    #square a, #square img{max-width: 35vw;}
+}
+@media only screen and (max-width: 700px) {
+    article{padding-top: 5vh;}
+    .headline h1{padding: 10vh 4vw;}
+    .big-pic img{
+        content: url(images/banner-square.png);
+        margin: 0;
+    }
+    .about p{padding: 3vh 5vw;}
+    .art-list{padding: 0 5vw;}
+    #icon-blocks{flex-wrap: wrap}
+    .summary iframe{width:90%;}
+    .description{flex-direction: column;}
+    .description p{margin-top: 3vh; width: 75%;}
+    .process p{width: 75%;}
+}
+@media only screen and (max-width: 500px) {
+    h3{min-width: 0;}
+    .headline h1{font-size: 3rem; top: 0; padding: 0 4vw; position: relative;}
+    .game-pic{margin: 0 1vw 2vh 1vw;
+        min-width: 0;
+        width: 100%; max-height: 300px;}
+    .contact-form *{width: 90%; min-width: 0;}
+    .png{max-width: 100%;}
+    .double-rows *{max-width: 50%; height: auto;}
+    .long-comic-desc p{margin: 0 10vw 2vh 10vw;}
+}
