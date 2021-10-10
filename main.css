@@ -171,8 +171,8 @@ header img{
     display: flex; flex-direction: column;
     margin: 5vh 0; flex-wrap: wrap; width: 100%;
 }
-.summary iframe{
-    margin: auto;
+.summary iframe, .summary img{
+    margin: auto;max-width: 800px;
 }
 .summary .description{
     display: flex; margin: 0 20vw 5vh 20vw;
@@ -207,9 +207,11 @@ header img{
 .process{
     margin: 0 15vw 5vh 15vw;
 }
+.sketch-list{ width: 100%; padding: 0;}
 .sketch-list *{
     margin: 1vh 1vw; border-radius: 10%;
-    max-height: 50vh; width: clamp(300px, 20vw; 500px);
+    max-height: 50vh;
+    width: clamp(300px, 20vw; 400px);
 }
 .art-summary{
     display: flex; flex-direction: column;
@@ -243,7 +245,7 @@ header img{
 }
 
 @media only screen and (max-width: 700px){
-    .summary iframe{width: 80%;}
+    .summary iframe, .summary img{width: 80%;}
     .description{flex-direction: column;}
     .description p{width: 100%;}
 }

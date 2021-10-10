@@ -3,29 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ana Vy Nguyen | Chicken Boy</title>
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Montserrat|Concert+One&display=swap" rel="stylesheet">
+    <title>Ana Vy Nguyen | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Pangolin|Montserrat|Concert+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
-    
+
 <body>
+    <nav class='nav-bar'>
+        <div class='left-nav'>
+            <a href='#game-section'>Games</a>
+            <a href='#art-section'>Art / Videos</a>
+        </div>
+        <a href='index.html' class='logo'>
+            <img src='images/logo.svg'>
+        </a>
+        <div class='right-nav'>
+            <a href = '#about-section'>About</a>
+            <a id= 'contact-me' href='mailto:vyanan918@gmail.com'>Contact Me</a>
+        </div>
+    </nav>
+    
     <header>
-        <nav class = 'nav-bar'>
-            <a href='index.html'>
-                <img id="logo" src="images/logo.svg" alt='logo'>
-            </a>
-            <div class = 'nav-links'>
-                <a href="Resume.pdf" download="anavn_resume">Resume</a>
-                <a href='index.html#projects-section'>Projects</a>
-                <a href='index.html#contact-section'>Contact Me</a>
-            </div>
-        </nav>
+        <h1>My Hero, Chicken Boy!</h1>
+        <img class='underline' src="images/underline.svg">
     </header>
     
     <section class='summary'>
-        <div class='section-heading'>
-            <h1>My Hero, Chicken Boy!</h1>
-        </div>
         <img id='sub-video' src="images/chicken-boi/game.png" alt='a picture of the gameplay'>
         <div class='description'>
             <div class='skills'>
@@ -36,27 +39,33 @@
                     <li>Rigging</li>
                 </ul>
             </div>
-            <p>April - June 2020<br>(Currently on haitus)<br><br> Originally an old final project for a class in 3D modeling, I'm currently working on completely redoing it to make it more polished and visually appealing. This was my first time doing any sort of 3D modeling, and my meshes reflected that. Now I'm hoping to remake it and learn a bit about solo dev work, but I'm currently taking a break on this to work on other projects. Look forward to seeing it finished!</p>
+            <div class='summary-text'>
+                <p class='date'><i>April - July 2021<br>(Currently on haitus)</i></p>
+                 <p>Originally an old final project for a class in 3D modeling, I'm currently working on completely redoing it to make it more polished and visually appealing. This was my first time doing any sort of 3D modeling, and my meshes reflected that. Now I'm hoping to remake it and learn a bit about solo dev work, but I'm currently taking a break on this to work on other projects. Look forward to seeing it finished!</p>
+            </div>
         </div>
     </section>
+    
+    <img class='underline' src="images/underline.svg">
     
     <section class='assets'>
-        <div class='section-heading'>
-            <h1>Art Assets</h1>
-        </div>
-        <div class='art-list'>
+        <h1>Art Assets</h1>
+        <div class='sketch-list'>
             <img id='chickenboy' src="images/chicken-boi/boy.png" alt='chicken boys 3d model'>
+            <img src="images/chicken-boi/basement.png" alt='a desk full of duck books and newspapers'>
+            <img src="images/chicken-boi/model3%20-%20thumbnail.png" alt='side view of a farm'>
+            <img src='images/chicken-boi/model2%20-%20thumbnail.png' alt='a shelf full of cleaning supplies'>
         </div>
     </section>
     
+    <img class='underline' src="images/underline.svg">
+    
     <section class='process'>
-        <div class='section-heading'>
-            <h1>Process</h1>
-        </div>
+        <h1>Process</h1>
         <article class='skill'>
             <h2>Character Design</h2>
             <p>The main character is, of course, Chicken Boy. I wanted him to actually believe that he was a chicken trying to free his family, so I tried to reflect that in his design. I didn't realize it at the time, but modeling his cape would be a totally new adventure for me. I really enjoyed working on him in Maya, so his design hasn't changed yet (still holding out for when I start modeling him in blender).<p>
-            <div class='art-list' id='comic'>
+            <div class='sketch-list' id='comic'>
                 <a class='comic' href="images/chicken-boi/character.jpg"><img src="images/chicken-boi/character%20-%20thumbnail.jpg"></a>
                 <a class='comic' href="images/chicken-boi/character2.jpg"><img src="images/chicken-boi/character2%20-%20thumbnail.jpg"></a>
             </div>
@@ -64,7 +73,7 @@
         <article class='skill'>
             <h2>Environment Design</h2>
             <p>The world itself was not as planned out as the character in the first round. Other than the basic layout (loft, basement, etc.), I just made a list of items I wanted to model in the world, then scattered them in a way that made sense with me. When remaking it in Blender, I tried planning out the world on paper first to save a lot of modeling time. I started with large shapes, like the loft and horse pen, then filled in empty space with small objects.</p>
-            <div class='art-list' id='comic'>
+            <div class='sketch-list' id='comic'>
                 <a class='comic' href='images/chicken-boi/Layout.png'><img src='images/chicken-boi/Layout%20-%20thumbnail.png'></a>
                 <a class='comic' href='images/chicken-boi/Layout2.png'><img src='images/chicken-boi/Layout2%20-%20thumbnail.png'></a>
                 <a class='comic' href='images/chicken-boi/Layout3.png'><img src='images/chicken-boi/Layout3%20-%20thumbnail.png'></a>
@@ -73,15 +82,16 @@
         <article class='skill'>
             <h2>Modeling</h2>
             <p>The next step was to take these plans and add 1 more dimension! While the original project was in Maya, by the time I decided I wanted to redo it my student license expired. I ended up having to learn Blender, but I'm glad I did! The transition wasn't very hard, and there were a lot of online resources to help me along the way. I'm still in this stage since there's lots of small things I want to make to fill out the world, and I'm having a lot of fun learning more about modeling in Blender. Hoping to finish two environments soon!</p>
-            <div class='art-list' id='comic'>
+            <div class='sketch-list' id='comic'>
                 <a class='comic' href="images/chicken-boi/model%20-%20thumbnail.png"><img src="images/chicken-boi/model%20-%20thumbnail.png"></a>
                 <a class='comic' href="images/chicken-boi/model2%20-%20thumbnail.png"><img src="images/chicken-boi/model2%20-%20thumbnail.png"></a>
                 <a class='comic' href="images/chicken-boi/model3%20-%20thumbnail.png"><img src="images/chicken-boi/model3%20-%20thumbnail.png"></a>
             </div>
         </article>
     </section>
+    
     <footer class="copyright">
-         <p>&copy; 2020 Ana Vy Nguyen</p>
+         <p>&copy; 2021 Ana Vy Nguyen</p>
     </footer>
 </body>
 </html>
